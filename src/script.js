@@ -1,5 +1,5 @@
-let name = 'Babatunde',
-    age = 27
+let text = "I love Tailwindcss Tailwindcss"
+let result = text.replace(/Tailwindcss/g, "Bootstrap")
 
-console.log(typeof(name)) // returns Boolean
-console.log(typeof(age))
+console.log(result) 
+// returns "I love Bootstrap"
