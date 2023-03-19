@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=DM+Sans:wght@400;700&family=Inter:wght@400;700&family=Manrope:wght@400;700&family=Mulish&family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>portfolio</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="home">
       <header>
         <nav>
           <div class="logo">
@@ -16,39 +25,71 @@
           </div>
           <div class="nav-link">
             <div class="nav-pages">
-              <a class="active" href="#home">HOME</a>
-              <a href="#portfolio">PORTFOLIO</a>
-              <a href="#about">ABOUT ME</a>
-              <a href="#contact">CONTACT</a>
+              <a class="link active" href="#home">HOME</a>
+              <a class="link" href="#portfolio">PORTFOLIO</a>
+              <a class="link" href="#about">ABOUT ME</a>
+              <a class="link" href="#contact">CONTACT</a>
             </div>
             <div class="nav-socials">
-              <a href="https://twitter.com/badbatunde"><img src="images/twitter.svg" alt=""></a>
-              <a href="https://github.com/badbatunde"><img src="images/github.svg" alt=""></a>
-              <a href="https://linkedin.com/in/badbatunde"> <img src="images/linkedin-in.svg" alt=""></a>
-              <a href="https://hashnode.com/@badbatunde"><img src="images/hashnode.svg" alt=""></a>
+              <a class="twitter" href="https://twitter.com/badbatunde">
+                <i class="fab fa-twitter"></i
+              ></a>
+              <a class="github" href="https://github.com/badbatunde">
+                <i class="fa fa-github"></i
+              ></a>
+              <a class="linkedin" href="https://linkein.com/in/badbatunde">
+                <i class="fa fa-linkedin"></i
+              ></a>
+              <a class="hashnode" href="https://hashnode.com/@badbatunde">
+                <i class="fa-brands fa-hashnode"></i>
+              </a>
             </div>
           </div>
         </nav>
         <div class="hero">
           <img src="images/displayP.jpeg" alt="display-pic" />
           <h1 class="hero-text">
-            I'm <span>Babátúndé Oyéṣíle <hr> </span>
-            <p>Frontend Developer and Technical Writer </p>
+            I'm
+            <span
+              >Babátúndé Oyéṣíle
+              <hr />
+            </span>
+            <p>Frontend Developer and Technical Writer</p>
           </h1>
         </div>
+        <div id="portfolio"></div>
       </header>
-      <section class="portfolio">
-        <h3>MY PORTFOLIO</h3>
-        <h4>SELECTED LATEST WORK</h4>
-      </section>
-      <section>
-        <h3>ABOUT ME</h3>
-        <div class="div">
-          <div class="div">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
-            facilis expedita praesentium amet modi rem quo dolore cum earum?
+      
+      <section> <a href="#portfolio"></a>
+        <div class="portfolio">
+          <div class="head">
+            <div class="title">
+              <h2>MY PORTFOLIO</h2>
+            </div>
+            <div class="selected-work">
+              <h4>SELECTED WORKS</h4>
+            </div>
+            <hr />
+            <div class="projects-grid">
+              <img class="grid jedtts" src="images/jedtts.png" alt="">
+              <img class="grid rate" src="images/rate.png" alt="">
+              <img class="grid rentals" src="images/home-rentals.png" alt="">
+            </div>
           </div>
-          <div class="div">
+          <div class="projects"></div>
+        </div>
+      </section>
+      <div id="about"></div>
+      <section class="about">
+        <div class="title">
+          <h2>ABOUT ME</h2> <hr>
+        </div>
+        <div class="abouts">
+          <div class="left-about">
+            <i class="fa-solid fa-quote-left"></i> <br>
+            <h2>TAKE IT A CODE AT A TIME.</h2>
+          </div>
+          <div class="right-about">
             <h4>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
               consequatur magnam, iure illo quam voluptate minus neque nihil
@@ -96,6 +137,7 @@
           <img src="" alt="" />
         </div>
       </section>
+      <div id="contact"></div>
       <section>
         <h3>Get in touch</h3>
         <p>
@@ -124,7 +166,8 @@
         </div>
       </section>
     </div>
-
     <script src="src/script.js"></script>
+    <script src="https://kit.fontawesome.com/ca2bd722b5.js" crossorigin="anonymous"></script>
+    </script>
   </body>
 </html>

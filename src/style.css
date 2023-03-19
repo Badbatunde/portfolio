@@ -11,15 +11,22 @@ body {
 header {
     height: 100vh;
     width: auto;
-    border: 2px solid red;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
     align-items: center;
     padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+    background-color:#fff;
+    box-shadow: 5px -1px 12px -5px grey;
 }
 
 nav a {
@@ -31,15 +38,25 @@ nav a {
 .nav-link {
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
     padding-top: 10px;
 }
 
 .nav-pages {
-    border-right: 1px black solid;
+    border-right: 1px gray solid;
+    font-weight: bold;
+    font-family: 'open sans', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    font-size: 12px;
 }
+
 .nav-pages a {
     padding-right: 30px; 
+    transition: all 0.3s linear;
+}
+
+.nav-pages a:hover, .active {
+    color: gold; 
 }
 
 .nav-socials {
@@ -56,17 +73,35 @@ nav a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.nav-socials img:hover {
-    color: yellow;
-    font-size: 100px;
+a i {
+    padding-top: 5px;
+    transition: all 0.3s linear;
 }
 
+a:hover i {
+    transform: scale(1.5);
+}
+
+.hashnode:hover {
+    color: blue;
+}
+
+.twitter:hover {
+    color: #00adb5;
+}
+
+.github:hover {
+    color: black;
+}
+
+.linkedin:hover {
+    color: #04009a;
+}
 
 .hero {
     display: flex;
     align-items: center;
-    padding: 120px 100px;
-    border: 1px solid red;
+    padding: 170px 100px;
 }
 
 .hero img {
@@ -75,33 +110,34 @@ nav a {
 }
 
 .hero hr {
-    border: 2px solid rgb(196, 39, 65);
-    width: 43rem;
-    margin-left: 9.3rem ;
+    border: 2px solid rgb(177, 10, 38);
+    width: 46rem;
+    margin-left: 9.6rem ;
     margin-top: 10px;
 }
 
 .hero-text {
-    border: 1px solid red;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 80px;
     font-style: normal;
     font-weight: lighter;
     align-items: center;
     justify-content: center;
+    font-family: 'open sans';
 }
 
 .hero span {
     color: black;
-    font-size: 70px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
+    font-size: 75px;
+    font-family: 'open sans';
+    font-weight: 700;
 }
 
 .hero-text p {
-    padding-top: 20px;
-    font-size:20px;
-    padding-left: 20%;
+    padding-top: 30px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-left: 25%;
     font-weight: 100;
     color: rgb(114, 114, 114);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -110,5 +146,116 @@ nav a {
 .portfolio {
     height: 100vh;
     width: auto;
-    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 100px;
+}
+
+.portfolio .head {
+    padding-bottom: 15px;
+}
+
+.portfolio .title {
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.portfolio hr {
+    border: 0.5px solid red;
+    width: 6rem;
+    margin-top: 10px;
+    margin-left: 47%;
+}
+
+.portfolio h4 {
+    color: grey;
+    font-family: sans-serif;
+
+}
+
+.portfolio .title h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px;
+    gap: 50px;
+}
+
+.grid {
+    height: auto;
+    object-fit: contain;  
+    border-radius: 10px;  
+}
+
+.jedtts {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    object-fit: fill;
+    width: 100%;
+    height: 550px;
+    margin-top: 35px;
+}
+
+.projects-grid .rate {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+}
+
+.projects-grid .rentals {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+}
+
+.about {
+    margin-top: 150px;
+    height: 100vh;
+}
+
+.about .title {
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.about .title hr {
+    border: 0.5px solid red;
+    width: 6rem;
+    margin-top: 15px;
+    margin-left: 47%;
+}
+
+.abouts {
+    display: flex;
+    margin: 50px 150px;
+    justify-content: space-between;
+}
+
+.left-about {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.left-about i {
+    color: red;
+}
+
+.right-about {
+    margin-left: 250px;
+    text-align: justify;
+    border: 1px solid red;
 }
