@@ -18,8 +18,3 @@ for (let i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
-
-const stack = ["Python", "JavaScript", "Bootstrap", "Tailwind"];
-const myStack = stack.slice(1, 3);
-
-console.log(myStack)

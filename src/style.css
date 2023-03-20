@@ -113,7 +113,7 @@ a:hover i {
     border: 2px solid rgb(177, 10, 38);
     width: 46rem;
     margin-left: 9.6rem ;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .hero-text {
@@ -166,7 +166,7 @@ a:hover i {
 .portfolio hr {
     border: 0.5px solid red;
     width: 6rem;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 47%;
 }
 
@@ -183,7 +183,7 @@ a:hover i {
 .projects-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 20px;
+    margin: 20px 40px;
     gap: 50px;
 }
 
@@ -232,7 +232,7 @@ a:hover i {
 .about .title hr {
     border: 0.5px solid red;
     width: 6rem;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 47%;
 }
 
@@ -258,4 +258,76 @@ a:hover i {
     margin-left: 250px;
     text-align: justify;
     border: 1px solid red;
+}
+
+.what-else {
+    margin-bottom: 100px;
+}
+
+.hobbies {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px 10px;
+    gap: 20px;
+}
+
+.hobbies img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.what-else hr {
+    border: 0.5px solid red;
+    width: 6rem;
+    margin-top: 20px;
+    margin-left: 47%;
+    margin-bottom: 50px;
+}
+
+.what-else {
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.contact {
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgb(240, 223, 226);
+}
+
+.contact hr {
+    border: 0.5px solid red;
+    width: 6rem;
+    margin-top: 20px;
+    margin-left: 47%;
+    margin-bottom: 40px;
+}
+
+.contact .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+section .para {
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 50px;
+    font-size: 18px;
+}
+
+.para a {
+    text-decoration: none;
+}
+
+section .footer {
+    border-top: 1px solid blue;
+    padding-top: 20px;
+    margin: 20px 100px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
 }
