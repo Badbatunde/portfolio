@@ -18,3 +18,9 @@ for (let i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+const quality = '21'
+console.log(typeof quality) // returns string
+
+const quantity = Number(quality)
+console.log(typeof (quantity)) // returns number

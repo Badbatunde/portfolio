@@ -216,7 +216,7 @@ a:hover i {
 
 .about {
     margin-top: 150px;
-    height: 100vh;
+    margin-bottom: 70px;
 }
 
 .about .title {
@@ -237,17 +237,15 @@ a:hover i {
 }
 
 .abouts {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 250px;
     margin: 50px 150px;
-    justify-content: space-between;
 }
 
 .left-about {
     font-size: 40px;
-    font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    text-align: center;
 }
 
 .left-about i {
@@ -255,9 +253,22 @@ a:hover i {
 }
 
 .right-about {
-    margin-left: 250px;
+    color: rgb(19, 17, 17);
+}
+
+.right-about h4 {
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.right-about p {
+    font-size: 20px;
+    font-family: sans-serif;
     text-align: justify;
-    border: 1px solid red;
+    line-height: 25px;
+    letter-spacing: 1px;
 }
 
 .what-else {
@@ -330,4 +341,20 @@ section .footer {
     text-align: center;
     font-family: monospace;
     font-size: 15px;
+}
+
+button {
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }
