@@ -181,78 +181,68 @@ a:hover i {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 20px 40px;
-    gap: 50px;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    margin: 20px 40px;  
+}
+
+.jedtts-div {
+    position: relative;
+    cursor: pointer;
+    transition: .5s ease;
+  }
+  
+.jedtts-div:hover .middle {
+    opacity: 1;
+}
+
+.image {
+    display: block;
+    width: 400px;
+    height: 300px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    z-index: 100;
+    object-fit: cover;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.text {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 350px;
+    height: 200px;
+    font-size: 16px;
+    padding: 20%;
+    border-top: red 1px solid;
+    cursor: pointer;
+    transition: .5s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text:hover {
+    
+    transform: scale(1.03);
 }
 
 .grid {
-    height: auto;
-    object-fit: contain;  
+    object-fit: cover;  
     border-radius: 10px;  
     transition: 0.1s ease-in-out;
 }
 
 .grid:hover {
-    border: 1px solid red;
     transform: scale(1.03);
-}
-
-.text {
-    background-color: #04AA6D;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-  }
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.jedtts-div {
-    position: relative;
-}
-
-.jedtts-div img {
-        opacity: 1;
-        transition: .5s ease;
-        backface-visibility: hidden;
-}
-
-.jedtts-div:hover img {
-    opacity: 0.3;
-}
-
-.jedtts-div:hover .middle {
-    opacity: 1;
-}
-
-.jedtts {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    object-fit: fill;
-    width: 100%;
-    height: 550px;
-    margin-top: 35px;
-}
-
-.projects-grid .rate {
-    width: 400px;
-    height: 300px;
-    object-fit: fill;
-}
-
-.projects-grid .rentals {
-    width: 400px;
-    height: 300px;
-    object-fit: fill;
 }
 
 .about {
