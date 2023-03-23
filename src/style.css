@@ -196,6 +196,10 @@ a:hover i {
     opacity: 1;
 }
 
+.jedtts-div a {
+    text-decoration: none;
+}
+
 .image {
     display: block;
     width: 400px;

@@ -18,3 +18,9 @@ for (let i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+let sports = ["Football", "Baseball", "Eating", "Tennis"]
+sports.splice(2, 1, "Chess")
+
+console.log(sports)
+// returns ["Football", "Baseball", "Chess", "Tennis"]
