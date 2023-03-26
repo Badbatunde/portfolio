@@ -19,8 +19,9 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-let sports = ["Football", "Baseball", "Eating", "Tennis"]
-sports.splice(2, 1, "Chess")
+const myStack = ["JavaScript", "Bootstrap"]
+myStack.push("React")
 
-console.log(sports)
-// returns ["Football", "Baseball", "Chess", "Tennis"]
+console.log(myStack) 
+// returns ["JavaScript", "Bootstrap", "React"]
+console.log(myStack.length) // returns 2
