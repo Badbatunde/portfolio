@@ -8,6 +8,11 @@ body {
   background-color: white;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 header {
   height: 100vh;
   width: auto;
@@ -78,7 +83,7 @@ a i {
   transition: all 0.3s linear;
 }
 
-a:hover i {
+.nav-socials a:hover i {
   transform: scale(1.5);
 }
 
@@ -292,10 +297,6 @@ a:hover i {
   color: red;
 }
 
-.right-about {
-  color: rgb(19, 17, 17);
-}
-
 .right-about h4 {
   font-size: 25px;
   font-family: sans-serif;
@@ -347,7 +348,7 @@ a:hover i {
 .contact {
   padding-top: 50px;
   text-align: center;
-  background-color: rgb(240, 223, 226);
+  background-color: #777;
 }
 
 .contact hr {
@@ -385,7 +386,7 @@ section .footer {
 
 button {
   text-align: center;
-  padding: 5px 20px;
+  padding: 1px 20px 3px 20px;
   border-radius: 20px;
   border: 2px solid black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
