@@ -19,7 +19,11 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-let decimal = 9.1
-let getInt = Math.ceil(decimal)
+let decimal = 7.4,
+    secDec  = 7.5
 
-console.log(getInt) // returns 10
+let getInt = Math.round(decimal),
+	secInt = Math.round(secDec)
+
+console.log(getInt) // returns 7
+console.log(secInt) // returns 8

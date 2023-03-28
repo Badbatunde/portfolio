@@ -61,7 +61,7 @@ nav a {
 
 .nav-pages a:hover,
 .active {
-  color: gold;
+  color: rgb(12, 10, 150);
 }
 
 .nav-socials {
@@ -96,11 +96,15 @@ a i {
 }
 
 .github:hover {
-  color: black;
+  color: #171515;
 }
 
 .linkedin:hover {
   color: #04009a;
+}
+
+.mail:hover {
+  color: #BB001B;
 }
 
 .hero {
@@ -112,6 +116,17 @@ a i {
 .hero img {
   border-radius: 50%;
   width: 280px;
+  animation: roll 3s;
+  transform: rotate(0);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hero hr {
