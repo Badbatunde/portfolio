@@ -22,7 +22,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 0px 30px 10px 30px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -162,10 +162,6 @@ a i {
   color: rgb(114, 114, 114);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-#slide {
-  transition-duration: 2s;
 }
 
 .portfolio {
