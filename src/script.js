@@ -42,12 +42,3 @@ for (let i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
-let decimal = 7.4,
-    secDec  = 7.5
-
-let getInt = Math.round(decimal),
-	secInt = Math.round(secDec)
-
-console.log(getInt) // returns 7
-console.log(secInt) // returns 8
