@@ -414,7 +414,120 @@ button:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .example {background: red;}
+  .portfolio {
+    height: auto;
+    margin-top: 250px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    border: 1px solid red;
+    text-align: center;
+    width: 100%;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .abouts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero img {
+    border-radius: 50%;
+    width: 200%;
+    animation: roll 3s;
+    transform: rotate(0);
+    border: 1px solid red;
+  }
+
+  .hero span {
+    color: black;
+    font-size: 25px;
+    font-family: "open sans";
+    font-weight: 700;
+  }
+  
+  .hero-text p {
+    padding-top: 30px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(114, 114, 114);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .hero hr {
+    border: none
+  }
+  
+  section .footer {
+    padding-top: 20px;
+    margin: 20px 0px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .nav-socials {
+    display: none;
+    border: 1px saddlebrown solid;
+  }
+
+  .about {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .left-about {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    border: 1px solid red;
+    margin-left: -100px;
+  }
+  
+  .left-about i {
+    color: red;
+  }
+  
+  .right-about h4 {
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+    border: 1px solid red;
+    width: 100vh;
+  }
+  
+  .right-about p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 1px;
+    border: 1px solid red;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
