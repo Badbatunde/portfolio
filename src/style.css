@@ -321,6 +321,7 @@ a i {
   text-align: justify;
   line-height: 25px;
   letter-spacing: 1px;
+  
 }
 
 .what-else {
@@ -414,9 +415,12 @@ button:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  body{
+    min-width: 375px;
+  }
   .portfolio {
     height: auto;
-    margin-top: 250px;
+    margin-top: 20rem;
   }
 
   nav {
@@ -428,7 +432,10 @@ button:hover {
     border: 1px solid red;
     text-align: center;
     width: 100%;
+    padding: 0;
   }
+
+ 
 
   .projects-grid {
     display: flex;
@@ -447,7 +454,7 @@ button:hover {
 
   .hero img {
     border-radius: 50%;
-    width: 200%;
+    width: 100%;
     animation: roll 3s;
     transform: rotate(0);
     border: 1px solid red;
@@ -460,6 +467,12 @@ button:hover {
     font-weight: 700;
   }
   
+  .hero-text{
+    width: 100%;
+    margin-left:0;
+
+  }
+
   .hero-text p {
     padding-top: 30px;
     letter-spacing: 1px;
@@ -473,7 +486,7 @@ button:hover {
   .wrapper {
     justify-content: center;
     align-items: center;
-
+width: 100%;
   }
 
   .hero hr {
@@ -498,26 +511,32 @@ button:hover {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-
+  .abouts{
+    width: 100%;
+    margin: 0;
+  } 
   .left-about {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     width: 250px;
     border: 1px solid red;
-    margin-left: -100px;
+    /* margin-left: -100px; */
   }
   
   .left-about i {
     color: red;
   }
-  
+  .right-about{
+    min-width: 20rem;
+ 
+  }
   .right-about h4 {
     font-size: 25px;
     font-family: sans-serif;
     line-height: 25px;
     letter-spacing: 1px;
     border: 1px solid red;
-    width: 100vh;
+    min-width: 10rem;
   }
   
   .right-about p {
@@ -527,6 +546,18 @@ button:hover {
     line-height: 25px;
     letter-spacing: 1px;
     border: 1px solid red;
+  
+  }
+
+  .projects-grid{
+    outline: 2px solid red;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .jedtts-div img{
+    width: 100%;
+ 
   }
 }
 
