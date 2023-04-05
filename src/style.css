@@ -553,11 +553,13 @@ button:hover {
   }
   
   .right-about h4 {
-    font-size: 25px;
+    font-size: 18px;
     font-family: sans-serif;
     line-height: 25px;
     letter-spacing: 1px;
     border: 1px solid red;
+    text-align: justify;
+    width: 90%;
   }
   
   .right-about p {
@@ -567,7 +569,7 @@ button:hover {
     line-height: 25px;
     letter-spacing: 1px;
     border: 1px solid red;
-    width: 100%;
+    width: 90%;
   }
 
   .about .title hr {
