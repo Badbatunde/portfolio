@@ -418,11 +418,6 @@ button:hover {
     border: 1px solid red;
   }
 
-  .portfolio {
-    margin-top: 0px;
-    border: 1px solid red;
-  }
-
   nav {
     display: none;
   }
@@ -497,7 +492,31 @@ button:hover {
     width: 18.5rem;
     margin-top: 15px;
     margin-bottom: 5px;
-    margin-left: 26%;
+    margin-left: 21%;
+  }
+  
+  .portfolio {
+    margin-top: 0px;
+    border: 1px solid red;
+    width: 100%;
+  }
+
+  .portfolio hr {
+    border: 0.5px solid red;
+    width: 6rem;
+    margin-top: 20px;
+    margin-left: 40%;
+  }
+
+  .grid {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .right-about {
+    width: 400%;
+    margin-left: -100px;
+    margin-top: -200px;
   }
   
   section .footer {
@@ -515,8 +534,10 @@ button:hover {
   }
 
   .about {
+    width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
+    border: 1px solid red;
   }
 
   .left-about {
@@ -546,6 +567,32 @@ button:hover {
     line-height: 25px;
     letter-spacing: 1px;
     border: 1px solid red;
+    width: 100%;
+  }
+
+  .about .title hr {
+    border: 0.5px solid red;
+    width: 6rem;
+    margin-top: 20px;
+    margin-left: 40%;
+  }
+
+  .what-else hr {
+    border: 0.5px solid red;
+    width: 6rem;
+    margin-top: 20px;
+    margin-left: 40%;
+  }
+
+  .contact p {
+    font-size: 15px;
+  }
+
+  .contact hr {
+    border: 0.5px solid red;
+    width: 6rem;
+    margin-top: 20px;
+    margin-left: 40%;
   }
 }
 
@@ -557,12 +604,7 @@ button:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .example {background: blue;}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {background: orange;}
-} 
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
