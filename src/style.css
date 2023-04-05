@@ -141,8 +141,6 @@ a i {
   font-size: 80px;
   font-style: normal;
   font-weight: lighter;
-  align-items: center;
-  justify-content: center;
   font-family: "open sans";
 }
 
@@ -413,8 +411,16 @@ button:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #portfolio {
-    margin-top: 0px;
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  .portfolio {
+    margin-top: -100px;
+    border: 1px solid red;
   }
 
   nav {
@@ -423,13 +429,14 @@ button:hover {
 
   .hero {
     flex-direction: column;
-    border: 1px solid red;
     text-align: center;
     padding: 100px;
-  }
+    padding-bottom: 0px;
+    width: 100%;
+  } 
 
   .hero img {
-    border-radius: 50%;
+    border-radius: 50px;
     width: 40px;
   }
 
@@ -453,47 +460,42 @@ button:hover {
     width: 190%;
     animation: roll 3s;
     transform: rotate(0);
-    border: 1px solid red;
     margin-bottom: 30px;
   }
 
   .hero span {
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     font-family: "open sans";
     font-weight: 700;
   }
-  
-  .hero-text p {
-    padding-top: 0px;
-    letter-spacing: 1px;
-    font-size: 20px;
-    font-weight: 100;
-    color: rgb(114, 114, 114);
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    border: 1px solid red;
-    text-align: center;
-  }
 
   .hero-text {
-    margin-left: 0px;
+    margin: 0px;
     font-size: 35px;
     font-style: normal;
     font-weight: lighter;
     font-family: "open sans";
-    text-align: left;
+    width: 200%;
+    line-height: 20px;  
   }
-
-  .wrapper {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border: 1px solid red;
+  
+  .hero-text p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: rgb(114, 114, 114);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 0px;
+    padding-top: -100px;
   }
 
   .hero hr {
-    border: none
+    border: 2px solid rgb(177, 10, 38);
+    width: 18.5rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 26%;
   }
   
   section .footer {
