@@ -296,8 +296,10 @@ hr {
 }
 
 .abouts {
+  margin: 1.5em 2em;
   display: grid;
   grid-template-columns: auto auto;
+  gap: 120px;
 }
 
 .left-about {
@@ -464,6 +466,7 @@ button:hover {
   .abouts {
     display: flex;
     flex-direction: column;
+    gap: 50px;
   }
 
   .hero img {
@@ -534,6 +537,7 @@ button:hover {
     /* padding: 0 0.5em; */
     width: 80%;
     /* align-items: center; */
+    padding: 0;
   }
   
   section .footer {
