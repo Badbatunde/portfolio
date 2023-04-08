@@ -296,11 +296,7 @@ hr {
 }
 
 .abouts {
-<<<<<<< HEAD
   padding: 50px 200px;
-=======
-  margin: 50px 200px;
->>>>>>> 8ec2866fa0575ba65d6c7923c3b59d3e5ce7418a
   display: grid;
   grid-template-columns: auto auto;
   gap: 200px;
@@ -327,10 +323,6 @@ hr {
 .right-about {
   width: 500px;
   padding-right: 100px;
-}
-
-.right-about {
-  width: 500px;
 }
 
 .right-about p {
@@ -582,6 +574,7 @@ button:hover {
     width: 250px;
     margin: 0.2em auto;
     border: 1px solid red;
+    margin-left: -170px;
   }
   
   .left-about i {
@@ -595,6 +588,8 @@ button:hover {
     letter-spacing: 1px;
     border: 1px solid red;
     text-align: justify;
+    margin-left: -170px;
+    width: 300px;
   }
   
   .right-about p {
@@ -604,6 +599,8 @@ button:hover {
     line-height: 25px;
     letter-spacing: 1px;
     border: 1px solid red;
+    margin-left: -170px;
+    width: 300px;
   }
 
   .about .title hr {
@@ -630,15 +627,19 @@ button:hover {
     margin-top: 20px;
     margin-left: 40%;
   }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up)  
-@media only screen and (min-width: 600px) {
+  button {
+    margin-left: -170px;
+  }
+}
+/* 
+Small devices (portrait tablets and large phones, 600px and up) 
+ @media only screen and (min-width: 600px) {
   .example {background: green;}
-} */
+} 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .example {background: blue;}
     .hero {
       flex-direction: column;
@@ -649,9 +650,9 @@ button:hover {
     .hero h1, .hero h1 span {
       font-size: 0.2rem;
     }
-}
+} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {
   .example {background: pink;}
-*/
+} */
