@@ -296,7 +296,7 @@ hr {
 }
 
 .abouts {
-  margin: 1.5em 2em;
+  margin: 50px 200px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 120px;
@@ -305,6 +305,7 @@ hr {
 .left-about {
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
 }
 
 .left-about i {
@@ -316,6 +317,10 @@ hr {
   font-family: sans-serif;
   line-height: 25px;
   letter-spacing: 1px;
+}
+
+.right-about {
+  width: 500px;
 }
 
 .right-about p {
