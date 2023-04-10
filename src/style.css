@@ -428,7 +428,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     /* width: 100%; */
-    border: 1px solid red;
   }
 
   nav {
@@ -520,7 +519,6 @@ button:hover {
   
   .portfolio {
     margin-top: 100px;
-    border: 1px solid red;
     width: 100%;
   }
 
@@ -561,7 +559,6 @@ button:hover {
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
-    border: 1px solid red;
   }
 
   .left-about {
@@ -569,7 +566,6 @@ button:hover {
     font-family: Arial, Helvetica, sans-serif;
     width: 250px;
     margin: 0.2em auto;
-    border: 1px solid red;
     margin-left: -170px;
   }
   
@@ -582,7 +578,6 @@ button:hover {
     font-family: sans-serif;
     line-height: 25px;
     letter-spacing: 1px;
-    border: 1px solid red;
     text-align: justify;
     margin-left: -170px;
     width: 320px;
@@ -594,7 +589,6 @@ button:hover {
     text-align: justify;
     line-height: 25px;
     letter-spacing: 1px;
-    border: 1px solid red;
     margin-left: -170px;
     width: 320px;
   }
