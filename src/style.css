@@ -232,6 +232,7 @@ hr {
   backface-visibility: hidden;
   z-index: 100;
   object-fit: cover;
+  border: 2px solid black;
 }
 
 .middle {
@@ -428,6 +429,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     /* width: 100%; */
+    overflow-x: hidden;
   }
 
   nav {
